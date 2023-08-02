@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.button-filter{
+    @include mobile__searchbar--buttons;
+    background-image: url(../../assets/mobile/icon-filter.svg);
+}
+
+.button-search{
+    @include mobile__searchbar--buttons;
+    background-image: url(../../assets/desktop/icon-search-white.svg);
+    background-color: var(--clr-violet);
+    width: 48px;
+}
+

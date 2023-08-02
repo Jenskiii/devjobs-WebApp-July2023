@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+.card{
+    padding-block: 0 36px;
+    width:  100%;
+    --container:85%;
+    a{
+        text-decoration: none;
+    }
+}
+
+.card__logo{
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    translate: 0 -25px;
+}
+
+.card__information{
+    --flow-space:.5rem;
+
+    a{
+        transition: color 200ms ease-in-out;
+    }
+    a:hover{
+        color: var(--clr-dark-grey);
+    }
+}
+
+.card__location{
+    margin-top: 39px;
+}
+

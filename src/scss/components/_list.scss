@@ -1,0 +1,46 @@
+//  ol
+.ordered-list{
+    ol {
+        counter-reset: item;
+        margin-left: 0;
+        padding-left: 0;
+      }
+      li {
+        display: block;
+        margin-bottom: .5em;
+        margin-left: 2em;
+      }
+      li::before {
+        display: inline-block;
+        content: counter(item) " ";
+        counter-increment: item;
+        width: 2em;
+        margin-left: -2em;
+        font-weight: 700;
+        font-size: var(--fs-400);
+        color: var(--clr-violet);
+      }
+}
+// ul
+.un-ordered-list{
+    ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    li{
+      display: block;
+      margin-bottom: .5em;
+      margin-left: 2em;   
+    }
+
+    li::before {
+        display:inline-block;
+        content: url(../../assets/desktop/icon-dot.svg); 
+        display: inline-block;
+        width: 2em;
+        margin-left: -2em;
+    }
+
+}

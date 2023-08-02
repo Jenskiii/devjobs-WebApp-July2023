@@ -1,0 +1,11 @@
+@use '../base' as *;
+@use '../abstracts' as *;
+
+@each $color, $shade in $colors{
+    .text-#{$color}{
+        color: var(--clr-#{$color});
+    }
+    .bg-#{$color}{
+        background-color: var(--clr-#{$color});
+    }
+}

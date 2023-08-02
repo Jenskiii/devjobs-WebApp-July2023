@@ -1,0 +1,33 @@
+.darkmode{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-darkmode{
+    --clr-light-grey: hsl(220 29% 10%);
+    --clr-white: hsl(219 29% 14%);
+    --clr-dark-grey: hsl(212 23% 69%);
+    --clr-dark-blue: hsl(212 23% 69%);
+
+    h2,a,button{
+        color: white;
+    }
+    .checkmark{
+        background-color: white;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    input{
+        background-color: hsl(219 29% 14%);
+        color: white;
+    }
+    
+    .button-transparent{
+        background-color: hsla(0 0 100% / .1);
+        &:hover{
+            background-color: hsla(0 0 100% / .25);
+        }
+    }
+}

@@ -1,0 +1,51 @@
+/* box sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,h1,h1,h2,h3,h4,h5,p,figure,picture,ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+/* set up body */
+body{
+    min-height: 100vh;
+    display: grid; /*helps everything stretch out*/
+    grid-template-rows: min-content 1fr; /*fixes heigth problem*/
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* images */
+img,picture{
+    max-width: 100%;
+    display: block;
+}
+
+/* forms */
+input,
+button,
+textarea,
+label,
+select{
+    font: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* remove animations when turned off*/
+@media (prefers-reduced-motion: reduce) {  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }

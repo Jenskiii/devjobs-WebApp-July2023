@@ -1,0 +1,20 @@
+@mixin baseButton{
+    border: none;
+    padding: 15px 39px;
+    height: 48px;
+    line-height: 0px;
+    cursor: pointer;
+    transition: background-color 200ms linear;
+}
+
+@mixin mobile__searchbar--buttons{
+    display: block;
+    z-index: 2000;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}

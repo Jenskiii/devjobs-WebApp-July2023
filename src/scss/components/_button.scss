@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+.button{
+   @include baseButton;
+   padding: 15px 39px;
+    &:hover{
+        background-color: var(--clr-light-violet);
+    }
+}
+
+.button-transparent{
+    @include baseButton;
+    padding: 0px 20px 0 20px;
+    text-align: center;
+    &:hover{
+        background-color: hsl(235 69% 61% /.35);
+    }
+}

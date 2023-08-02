@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+@use './typography' as *;
+:root{
+ // loops through clrs and fonts and makes root variable
+@each $color,$shade in $colors{
+        --clr-#{$color}: #{$shade};
+}
+
+@each $size, $value in $typography{
+        --fs-#{$size}: #{$value};
+}
+}
+
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <script src="../src/js/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="grid " style="background-color: grey;
+place-items: center; margin-top: 3%;">
+
+    <!-- nav -->
+    <nav class="primary__nav">
+        <div class="primary__nav--wrapper container flex">
+            <img src="../assets/desktop/logo.svg" alt="devjobs logo">
+            <div class="darkmode flex">
+                <svg width="20" height="19" xmlns="http://www.w3.org/2000/svg">
+                    <path class="sun" d="M10 15.635c.33 0 .612.295.612.639v1.89c0 .344-.282.638-.612.638s-.612-.294-.612-.638v-1.89c0-.344.282-.639.612-.639zm-4.488-1.783c.27.262.27.68 0 .941L4.03 16.231a.698.698 0 01-.97 0 .649.649 0 010-.941l1.482-1.438c.27-.261.7-.261.97 0zm9.946 0l1.483 1.438c.27.261.27.68 0 .941a.698.698 0 01-.97 0l-1.483-1.438a.649.649 0 010-.94c.242-.262.674-.262.97 0zM10 4.552c1.396 0 2.685.525 3.598 1.4.913.85 1.504 2.05 1.504 3.35 0 1.3-.59 2.5-1.504 3.35a5.314 5.314 0 01-3.598 1.4c-1.396 0-2.685-.525-3.598-1.4-.913-.85-1.504-2.05-1.504-3.35 0-1.3.564-2.5 1.504-3.35A5.314 5.314 0 0110 4.552zM2.607 8.906c.355 0 .658.274.658.594 0 .32-.303.594-.658.594H.658C.304 10.094 0 9.82 0 9.5c0-.32.304-.594.658-.594h1.95zm16.735 0c.354 0 .658.274.658.594 0 .32-.304.594-.658.594h-1.95c-.354 0-.657-.274-.657-.594 0-.32.303-.594.658-.594h1.949zM4.03 2.77l1.482 1.438c.27.261.27.68 0 .94-.242.262-.674.262-.97 0L3.059 3.71a.649.649 0 010-.941c.27-.261.701-.261.97 0zm12.91 0c.27.261.27.68 0 .941l-1.482 1.438a.698.698 0 01-.97 0 .649.649 0 010-.941l1.482-1.438c.27-.261.701-.261.97 0zM10 .198c.33 0 .612.294.612.638v1.89c0 .344-.282.639-.612.639s-.612-.295-.612-.639V.836c0-.344.282-.638.612-.638z" fill="#FDB813" fill-rule="nonzero"/>
+                </svg>
+                <label class="darkmode-switch">
+                    <input type="checkbox" id="darkmode-switch">
+                    <span class="darkmode-slider round"></span>
+                </label>
+                <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+                    <path class="moon" d="M6 0c1.516 0 2.925.566 3.978 1.523A3.979 3.979 0 008 1a4.014 4.014 0 00-2.821 1.179A3.927 3.927 0 004 5c0 1.095.463 2.105 1.179 2.821A3.927 3.927 0 008 9a4.034 4.034 0 003.974-3.548c.017.18.026.364.026.548a6.02 6.02 0 01-1.768 4.232A6.02 6.02 0 016 12a5.89 5.89 0 01-4.232-1.768A6.02 6.02 0 010 6a5.89 5.89 0 011.768-4.232A6.02 6.02 0 016 0z" fill="#FFF" fill-rule="nonzero"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- darkmode button -->
+    <div class="darkmode flex">
+        <svg width="20" height="19" xmlns="http://www.w3.org/2000/svg">
+            <path class="sun" d="M10 15.635c.33 0 .612.295.612.639v1.89c0 .344-.282.638-.612.638s-.612-.294-.612-.638v-1.89c0-.344.282-.639.612-.639zm-4.488-1.783c.27.262.27.68 0 .941L4.03 16.231a.698.698 0 01-.97 0 .649.649 0 010-.941l1.482-1.438c.27-.261.7-.261.97 0zm9.946 0l1.483 1.438c.27.261.27.68 0 .941a.698.698 0 01-.97 0l-1.483-1.438a.649.649 0 010-.94c.242-.262.674-.262.97 0zM10 4.552c1.396 0 2.685.525 3.598 1.4.913.85 1.504 2.05 1.504 3.35 0 1.3-.59 2.5-1.504 3.35a5.314 5.314 0 01-3.598 1.4c-1.396 0-2.685-.525-3.598-1.4-.913-.85-1.504-2.05-1.504-3.35 0-1.3.564-2.5 1.504-3.35A5.314 5.314 0 0110 4.552zM2.607 8.906c.355 0 .658.274.658.594 0 .32-.303.594-.658.594H.658C.304 10.094 0 9.82 0 9.5c0-.32.304-.594.658-.594h1.95zm16.735 0c.354 0 .658.274.658.594 0 .32-.304.594-.658.594h-1.95c-.354 0-.657-.274-.657-.594 0-.32.303-.594.658-.594h1.949zM4.03 2.77l1.482 1.438c.27.261.27.68 0 .94-.242.262-.674.262-.97 0L3.059 3.71a.649.649 0 010-.941c.27-.261.701-.261.97 0zm12.91 0c.27.261.27.68 0 .941l-1.482 1.438a.698.698 0 01-.97 0 .649.649 0 010-.941l1.482-1.438c.27-.261.701-.261.97 0zM10 .198c.33 0 .612.294.612.638v1.89c0 .344-.282.639-.612.639s-.612-.295-.612-.639V.836c0-.344.282-.638.612-.638z" fill="#FDB813" fill-rule="nonzero"/>
+        </svg>
+        <label class="darkmode-switch">
+            <input type="checkbox" id="darkmode-switch">
+            <span class="darkmode-slider round"></span>
+        </label>
+        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+            <path class="moon" d="M6 0c1.516 0 2.925.566 3.978 1.523A3.979 3.979 0 008 1a4.014 4.014 0 00-2.821 1.179A3.927 3.927 0 004 5c0 1.095.463 2.105 1.179 2.821A3.927 3.927 0 008 9a4.034 4.034 0 003.974-3.548c.017.18.026.364.026.548a6.02 6.02 0 01-1.768 4.232A6.02 6.02 0 016 12a5.89 5.89 0 01-4.232-1.768A6.02 6.02 0 010 6a5.89 5.89 0 011.768-4.232A6.02 6.02 0 016 0z" fill="#FFF" fill-rule="nonzero"/>
+        </svg>
+    </div>
+
+    <!-- checkbox full time -->
+    <div class="checkbox-search">
+        <label class="checkbox-container bold text-dark-blue">Full Time Only
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+    </div>
+
+    <!-- search bar -->
+    <div class="search-bar bg-white border-radius flex">
+        <div class="search-filter  flex">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.112 15.059h-1.088l-.377-.377a8.814 8.814 0 002.15-5.784A8.898 8.898 0 008.898 0 8.898 8.898 0 000 8.898a8.898 8.898 0 008.898 8.899c2.211 0 4.23-.808 5.784-2.143l.377.377v1.081l6.845 6.832 2.04-2.04-6.832-6.845zm-8.214 0A6.16 6.16 0 118.9 2.737a6.16 6.16 0 010 12.322z"
+                 fill="#5964E0" fill-rule="nonzero"/>
+            </svg>
+            <input class="text-dark-blue fs-400" type="text" placeholder="Filter by title, companies, expertise…">
+        </div>
+
+        
+            <div class="mobile__wrapper border-radius flex">
+                <div class="search-location  flex">
+                    <svg width="17" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.358 2.451A8.3 8.3 0 008.448 0a8.3 8.3 0 00-5.911 2.451c-2.922 2.925-3.285 8.427-.786 11.76l6.697 9.683 6.687-9.669c2.508-3.347 2.145-8.85-.777-11.774zm-5.833 8.894a3.057 3.057 0 01-3.051-3.054 3.057 3.057 0 013.05-3.055 3.057 3.057 0 013.052 3.055 3.057 3.057 0 01-3.051 3.054z"
+                        fill="#5964E0" fill-rule="nonzero"/>
+                    </svg>
+                    <input class="text-dark-blue fs-400" type="text" placeholder="Filter by location…">
+                </div>
+                
+                <div class="checkbox-search flex">
+                    <label class="checkbox-container bold text-dark-blue"><span class="full-text">Full Time Only</span>
+                        <span class="short-text">Full Time</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <button class="button fs-400 text-white bg-violet border-radius bold">Search</button>
+                </div>
+            </div>
+
+
+            <!-- mobile -->
+            <div class="mobile__search--buttons flex">
+                <button class="button-filter"></button>
+                <button class="button-search border-radius"></button>
+            </div>
+    </div>
+    
+<!-- button -->
+    <div>
+        <!-- dark purple -->
+        <button class="button fs-400 text-white bg-violet border-radius bold">Load More</button>
+
+        <!-- light purple -->
+        <button class="button-transparent fs-400 text-violet bg-opacity-violet border-radius bold">Company Site</button>
+    </div>
+
+
+
+    <!-- card -->
+    <div class="card bg-white border-radius">
+        <div class="container">
+            <div class="card__logo grid border-radius bg-violet">
+                <img class="card__logo--img" src="../assets/logos/blogr.svg" alt="">
+            </div>
+            <div class="card__information flow">
+                <p class="fs-400 text-dark-grey"><span class="card__postedAt">5h ago</span> . <span class="card__contract">full time</span></p>
+                <h3 class="card__position fs-500 text-dark-blue bold">Senior Software Engineer</h3>
+                <p class="card_company fs-400 text-dark-grey">Office Lite</p>
+            </div>
+
+            <p class="card__location fs-300 text-violet bold">Japan</p>
+        </div>
+    </div>
+    
+</body>
+</html>

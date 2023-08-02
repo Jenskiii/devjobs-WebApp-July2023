@@ -1,0 +1,18 @@
+@use '../base' as *;
+
+// makes classes for fonts
+@each $size, $value in $typography{
+    .fs-#{$size}{
+        font-size: $value;
+    }
+ }
+
+ @each $size, $value in $line-height{
+    .fs-#{$size}{
+        line-height: $value;
+    }
+ }
+
+.bold{
+    font-weight: 700;
+ }

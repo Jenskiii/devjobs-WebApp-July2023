@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+// searchbar
+.search-bar{
+    translate: 0 -38px;
+}
+
+// jobs
+.jobs{
+    place-items: center;
+    --gap:3rem;
+}
+
+.card__wrapper{
+    place-items: center;
+    width: 100%;
+    max-width: 1110px;
+    --gap:3rem 11px;
+
+    @media(min-width: $br-small){
+        &{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media(min-width: $br-large){
+        &{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    } 
+}
+// hides last card
+#card20,#card19,#card18,#card17,#card16,#card15,#card14,#card13{
+    display: none;
+}
+
+
