@@ -674,7 +674,7 @@ input:checked + .darkmode-slider:before {
 .card {
   padding-block: 0 36px;
   width: 100%;
-  --container:85%;
+  --container:90%;
 }
 .card a {
   text-decoration: none;
@@ -742,6 +742,7 @@ input:checked + .darkmode-slider:before {
 
 .search-bar {
   translate: 0 -38px;
+  margin-bottom: 70px;
 }
 
 .jobs {
@@ -763,6 +764,7 @@ input:checked + .darkmode-slider:before {
 @media (min-width: 76.25rem) {
   .card__wrapper {
     grid-template-columns: 1fr 1fr 1fr;
+    --gap:72px 30px;
   }
 }
 
